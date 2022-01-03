@@ -3,22 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/musik_nav"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.uas_musik.view.login.fragment_login"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_fragment_login_to_fragment_register"
             app:destination="@id/registerFragment"
             app:launchSingleTop="true"
             app:popUpTo="@id/registerFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.uas_musik.fragment_register"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.uas_musik.view.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/quiz_layout"
+        android:name="com.example.uas_musik.quiz_layout"
+        android:label="fragment_quiz_layout"
+        tools:layout="@layout/fragment_quiz_layout" />
 </navigation>
