@@ -15,7 +15,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="81dp"
         android:layout_marginBottom="32dp"
-        android:text="WELCOME"
+        android:text="Selamat Datang!"
         android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Sign in"
+                android:text="Masuk"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -86,12 +86,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
-                    android:hint="email"
+                    android:hint="password"
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/sign_in_button"
+                android:id="@+id/regist_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
@@ -106,16 +106,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/sign_in_pass_input" />
 
             <TextView
-                android:id="@+id/buttonRegister"
+                android:id="@+id/buttonlogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="191dp"
-                android:text="register"
+                android:text="Daftar?"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/sign_in_button"
-                app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+                app:layout_constraintStart_toStartOf="@+id/regist_button"
+                app:layout_constraintTop_toBottomOf="@+id/regist_button" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

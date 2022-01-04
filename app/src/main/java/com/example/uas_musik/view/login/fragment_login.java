@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -17,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.uas_musik.R;
 import com.example.uas_musik.helper.SharedPreferenceHelper;
+import com.example.uas_musik.view.MainActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
 /**
@@ -87,9 +87,9 @@ public class fragment_login extends Fragment {
 
         email_login = view.findViewById(R.id.sign_in_email_input);
         pass_login = view.findViewById(R.id.sign_in_pass_input);
-        sign_in_btn = view.findViewById(R.id.sign_in_button);
+        sign_in_btn = view.findViewById(R.id.regist_button);
 
-        RegisterBtn = view.findViewById(R.id.buttonRegister);
+        RegisterBtn = view.findViewById(R.id.buttonlogin);
         RegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -122,5 +122,22 @@ public class fragment_login extends Fragment {
                 Toast.makeText(fragment_login.this.requireActivity(), "please input user and password", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        ((MainActivity) getActivity()).getSupportActionBar().hide();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((MainActivity) getActivity()).getSupportActionBar().hide();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        ((MainActivity)getActivity()).getSupportActionBar().show();
     }
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Uas_musik">
         <activity
+            android:name=".view.quiz.quiz"
+            android:exported="false" />
+        <activity
             android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
