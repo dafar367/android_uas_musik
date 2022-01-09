@@ -31,7 +31,7 @@ public class fragment_login extends Fragment {
     TextInputLayout email_login,pass_login;
     Button sign_in_btn;
 
-    private LoginViewModel loginViewModel;
+//    private LoginViewModel loginViewModel;
     private SharedPreferenceHelper helper;
 
     // TODO: Rename parameter arguments, choose names that match

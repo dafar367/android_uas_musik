@@ -2,4 +2,8 @@
     <string name="app_name">uas_musik</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="materisalah" />
+    <string name="materi1">materi</string>
+    <string name="leaderboard">leaderboard</string>
+    <string name="akun">akun</string>
 </resources>

@@ -16,26 +16,17 @@
             app:popUpTo="@id/registerFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_loginFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_loginFragment_to_quiz_layout"
+            app:destination="@id/quiz_layout" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.uas_musik.view.register.fragment_register"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.uas_musik.view.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/quiz_layout"
         android:name="com.example.uas_musik.view.quiz.quiz_layout"
         android:label="fragment_quiz_layout"
-        tools:layout="@layout/fragment_quiz_layout" >
-        <action
-            android:id="@+id/action_quiz_layout_to_mainActivity"
-            app:destination="@id/mainActivity" />
-    </fragment>
+        tools:layout="@layout/fragment_quiz_layout" />
 </navigation>
